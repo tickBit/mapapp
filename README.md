@@ -1,4 +1,4 @@
-# MapApp - very simple app to identy terrain types from OpenStreetMap
+# MapApp - very simple app to identify terrain types from OpenStreetMap
 
 Try clicking on the map, and from backend is fetched info what terrain type was clicked.
 
