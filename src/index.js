@@ -12,9 +12,8 @@ var lat = event.latlng.lat;
 var lon = event.latlng.lng;
 console.log("Clicked coordinates: ", lat, lon);
 
-// Create a 64x64 pixel bounding box centered on the clicked point
 var bounds = L.latLngBounds(
-    L.latLng(lat - 0.0008, lon - 0.0008), // Adjust these values to get the 64x64 size you want
+    L.latLng(lat - 0.0008, lon - 0.0008), 
     L.latLng(lat + 0.0008, lon + 0.0008)
 );
            
@@ -32,7 +31,6 @@ var se = map.latLngToContainerPoint(bounds.getSouthEast());
 var width = se.x - nw.x;
 var height = se.y - nw.y;
 
-// Luo uusi canvas rajatulle 64x64 pikselin alueelle
 var croppedCanvas = document.createElement('canvas');
 croppedCanvas.width = 64;
 croppedCanvas.height = 64;
